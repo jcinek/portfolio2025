@@ -264,10 +264,6 @@ header {
     .gallerymobile {
         display: contents;
     }
-
-    .mainitem h2 {
-        margin-bottom: 30rem;
-    }
 }
 
 @media all and (max-width:900px) {
@@ -339,6 +335,7 @@ header {
 @media all and (max-width:600px) {
     .mainitem h2 {
         font-size: 2.8rem;
+        margin-bottom: .5rem;
     }
 
     .galleryitem h3 {
