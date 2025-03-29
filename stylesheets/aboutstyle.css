@@ -1,0 +1,76 @@
+header h3 {
+    color: black;
+}
+
+.aboutitem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+
+.aboutitem h2, .aboutitem h3, .aboutitem p {
+    color: black;
+    padding: 0;
+    text-align: left;
+    margin: 1rem;
+    margin-left: 0;
+    text-indent: 0;
+    text-shadow: 0px 0px 10px white;
+}
+
+#abouth3 {
+    font-size: 1.5rem;
+}
+
+.aboutitem p {
+    font-size: 1.15rem;
+    line-height: 1.9rem;
+}
+
+.biobox {
+    width: 24rem;
+    margin-right: 14rem;
+}
+
+.aboutlink {
+    color: black;
+}
+
+.aboutlink:hover {
+    font-weight: bold;
+}
+
+.aboutlink:active {
+    font-weight: 400;
+}
+
+/* ------------------------------------------------ */
+/* Media Queries */
+/* ------------------------------------------------ */
+
+@media all and (max-width: 1400px) {
+    .biobox {
+        margin-right: 8rem;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .biobox {
+        margin-right: 5rem;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .biobox {
+        margin: 0;
+    }
+    .aboutitem {
+        justify-content: center;
+    }
+    .aboutitem h2, .aboutitem h3, .aboutitem p {
+        text-align: center;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}

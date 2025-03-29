@@ -1,0 +1,133 @@
+header h3 {
+    color: black;
+}
+
+.formheaders {
+    color: black;
+}
+
+.successbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contactitem h3 {
+    letter-spacing: .3rem;
+    text-indent: .3rem;
+}
+
+.successbox h3 {
+    font-size: 2rem;
+}
+
+.successbox p {
+    margin: 3rem;
+}
+
+.successbox p > a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: .2rem;
+    padding: .3rem 1rem .3rem 1rem;
+}
+
+.successbox p > a:hover {
+    box-shadow: 0 0 .6rem .2rem rgba(0, 0, 0, 0.8);
+    transition: .15s ease-in-out;
+}
+
+.successbox p > a:active {
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 .6rem .2rem rgba(0, 0, 0, 0.8);
+}
+
+.formbox {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.formbox label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.formbox input {
+    margin-top: 1rem;
+    padding: 1rem .5rem 1rem .5rem;
+    height: 1.5em;
+    width: 15rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.formbox textarea {
+    margin-top: 1rem;
+    width: 25rem;
+    padding: .5rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    resize: none;
+}
+
+.formbox button {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.01rem;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: .2rem;
+    padding: .5rem 1rem .5rem 1rem;
+    margin: 1rem;
+}
+
+.formbox button:hover {
+    box-shadow: 0 0 .6rem .2rem rgba(0, 0, 0, 0.8);
+    transition: .15s ease-in-out;
+}
+
+.formbox button:active {
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 .6rem .2rem rgba(0, 0, 0, 0.8);
+}
+
+.formerror {
+    color: red;
+}
+
+@media all and (max-width:620px) {
+    .mainitem h2 {
+        font-size: 2.5rem;
+    }
+
+    .mainitem h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width:534px) {
+    .mainitem h2 {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-indent: 0;
+
+        width: 25rem;
+    }
+}
+
+@media all and (max-width:500px) {
+    .formbox textarea {
+        width: 20rem;
+    }
+}

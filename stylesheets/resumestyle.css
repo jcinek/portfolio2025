@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+}
+
+.resumeitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resumeitem h2 {
+    font-size: 3em;
+    padding-top: 0;
+    margin-bottom: 1rem;
+}
+
+.resumeitem p {
+    margin: 1.5rem;
+}
+
+.resumeitem p > a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: .2rem;
+    padding: .3rem 1rem .3rem 1rem;
+}
+
+.resumeitem p > a:hover {
+    box-shadow: 0 0 .6rem .2rem rgba(255, 255, 255, 0.8);
+    transition: .15s ease-in-out;
+}
+
+.resumeitem p > a:active {
+    color: white;
+    text-shadow: 1px 1px 9px white;
+    background-color: black;
+    box-shadow: 0 0 .6rem .2rem rgba(255, 255, 255, 0.8);
+}
+
+.theresume {
+    height: 70vh;
+    width: 60rem;
+}
+
+@media all and (max-width:1095px) {
+    .theresume {
+        width: 55rem;
+    }
+}
+
+@media all and (max-width:985px) {
+    .theresume {
+        display: none;
+    }
+}

@@ -1,0 +1,447 @@
+/* Google Font: Nunito Sans */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400&display=swap');
+
+.videodiv {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.backvideo {
+    z-index: -1;
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 0 0 1rem;
+}
+
+.backvideo2 {
+    position: absolute;
+    height: 115vh;
+    width: 100vw;
+    right: 0;
+    left: 3rem;
+    bottom: 0;
+    z-index: -1;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+main::-webkit-scrollbar {
+    width: .8rem;
+}
+  
+/* Track */
+main::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* Handle */
+main::-webkit-scrollbar-thumb {
+    background: #555555;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 1.3rem;
+    top: 1.3rem;
+    width: 11rem;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header h3 {
+    color: white;
+    margin: 0 0 .7rem 0;
+    letter-spacing: .1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-right: .4rem;
+}
+
+#navactive {
+    border-top: solid white;
+    border-bottom: solid white;
+    border-width: 2px;
+}
+
+#navactive a {
+    pointer-events: none;
+}
+
+.navbox {
+    height: 100%;
+    position: absolute;
+    left: -5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    transition: ease .3s;
+}
+
+.navbox:hover {
+    left: 0;
+    box-shadow: -.6rem 0 .6rem 1rem  rgba(0, 0, 0, 0.7);
+}
+
+.navlist {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 8rem;
+    list-style-type: none;
+    z-index: 1;
+}
+
+.navitems {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 1rem 0;
+    padding: 1rem 0 1rem 0;
+    pointer-events: none;
+}
+
+.navitems:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navitems:active i {
+    text-shadow: 0 0 1rem white, 0 0 1rem white;
+}
+
+.navitems:active {
+    background-color: rgb(36, 36, 36);
+}
+
+.navitems .iconlable {
+    pointer-events: all;
+}
+
+.navitems .iconbox {
+    pointer-events: all;
+}
+
+.navitems a {
+    text-decoration: none;
+    color: white;
+}
+
+.navitems p {
+    margin: 0 0 0 1rem;
+}
+
+.navitems i {
+    padding: 0 1rem 0 1rem;
+}
+
+.iconlable {
+    width: 5rem;
+}
+
+.iconbox {
+    width: 3rem;
+    text-align: center;
+}
+
+.lablebox {
+    display: inline;
+    position: fixed;
+    float: right;
+    margin-left: 2rem;
+    padding: 1rem;
+    background-color: black;
+}
+
+.mainflex {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 0;
+}
+
+main {
+    margin: 0 0 0 3rem;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
+    padding: 0;
+}
+
+.mainitem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    color: white;
+    height: 100vh;
+    width: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.mainitem h2 {
+    margin: 0;
+    font-size: 4.5rem;
+    padding-top: 1rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    text-indent: 1rem;
+}
+
+.mainitem h3 {
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
+    text-indent: 1rem;
+    margin: 2rem 0 2rem 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+.mainitem h4 {
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
+    text-indent: 1rem;
+    margin: 2rem;
+    padding: 0;
+    font-weight: 400;
+}
+
+.indexh3_2 {
+    display: none;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about, #resume, #gallery, #contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titlebox {
+    text-decoration: none;
+    width: 40rem;
+    color: white;
+}
+
+.titlebox:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 2rem 3rem rgba(255, 255, 255, 0.5);
+    transition: .15s ease-in-out;
+}
+
+footer {
+    scroll-snap-align: start;
+    margin: 0;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding: .6rem;
+}
+
+#copyright {
+    padding-top: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer img {
+    padding: .6rem;
+    padding-bottom: 1rem;
+}
+
+.scrolldownbtn {
+    all: unset;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.scrolldownbtn .downarrow {
+    height: 1.4rem;
+    width: 1.4rem;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    transform: rotate(135deg);
+    margin-bottom: 10px;
+    pointer-events: none;
+}
+
+.scrolldownbtn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.scrolldownbtn:hover {
+    box-shadow: 0 0 1rem .4rem rgba(255, 255, 255, 0.4);
+}
+
+.scrolldownbtn:active .downarrow{
+    border-right: 3px solid black;
+    border-top: 3px solid black;
+}
+
+.scrolldownbtn2 {
+    margin-top: 5rem;
+}
+
+.scrolltopbtn .downarrow {
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    border-right: 0;
+    border-top: 0;
+    margin-bottom: -12px;
+}
+
+.scrolltopbtn:active .downarrow{
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    border-right: 0;
+    border-top: 0;
+}
+
+#footeryear {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+/* ------------------------------------------------ */
+/* Media Queries */
+/* ------------------------------------------------ */
+
+@media all and (max-width: 875px) {
+    .mainitem h2 {
+        font-size: 4rem;
+    }
+
+    .mainitem h3 {
+        font-size: 1.3rem;
+    }
+
+    .mainitem h4 {
+        font-size: 1.3rem;
+    }
+}
+
+@media all and (max-width:800px) {
+    .backvideo {
+        margin: 0;
+    }
+
+    main::-webkit-scrollbar {
+        width: 0;
+        display: none;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .indexh3 {
+        display: none;
+    }
+
+    .indexh3_2 {
+        display: flex;
+        justify-content: center;
+        margin: .5rem;
+    }
+
+    .mainitem h2 {
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .mainitem h3 {
+        margin: 1.3rem;
+    }
+
+    .scrolldownbtn {
+        height: 2.4rem;
+        width: 2.4rem;
+        margin-top: 2rem;
+        margin-left: .1rem;
+    }
+
+    .scrolldownbtn .downarrow {
+        height: .8rem;
+        width: .8rem;
+        margin-bottom: 7px;
+    }
+
+    .scrolldownbtn2 {
+        margin-top: 4.2rem;
+    }
+
+    .scrolltopbtn .downarrow {
+        margin-bottom: -7px;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .mainitem h3 {
+        font-size: 1.1rem;
+    }
+
+    .mainitem h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .mainitem h2 {
+        font-size: 3rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #lastname {
+        margin-bottom: 3rem;
+    }
+}

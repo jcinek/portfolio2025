@@ -1,0 +1,134 @@
+.hamburgerheader {
+    display: none;
+}
+
+.navItem a {
+    text-decoration: none;
+}
+
+.navItem a:hover {
+    text-decoration: underline;
+}
+
+.navItem a:active {
+    text-shadow: 1px 1px 9px white;
+}
+
+.containerWrapper {
+    background-color: black;
+    display: none;
+}
+
+.navItem {
+    list-style: none;
+}
+
+.hamburgerNav {
+    display: none;
+}
+
+.navLink {
+    transition: 0.1s ease-out;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 4px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+@media all and (max-width:800px) {
+    header {
+        display: none;
+    }
+
+    .containerWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    #fixedcontainerwrapper {
+        position: fixed;
+        width: 100vw;
+    }
+
+    .navBar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .6em;
+    }
+
+    .navbox {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hamburgerNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: -200vw;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .navItem {
+        margin: 16px 0;
+    }
+
+    .hamburgerNav.active {
+        top: 45px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hamburgerNav.active a {
+        color: white;
+    }
+
+    .hamburgerheader {
+        display:initial;
+    }
+
+    .hamburgerheader a {
+        text-decoration: none;
+    }
+
+    .hamburgerheader img {
+        margin: 1rem;
+    }
+
+    .footerlogo {
+        margin-bottom: 3rem;
+    }
+}
