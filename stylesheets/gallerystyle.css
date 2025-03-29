@@ -335,6 +335,7 @@ header {
 @media all and (max-width:600px) {
     .mainitem h2 {
         font-size: 2.8rem;
+        margin-bottom: 2rem;
     }
 
     .galleryitem h3 {
