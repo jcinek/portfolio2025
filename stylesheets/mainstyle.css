@@ -52,6 +52,16 @@ main::-webkit-scrollbar-thumb {
     background: #555555;
 }
 
+#overflowbox {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -236,6 +246,10 @@ main {
     font-weight: 400;
 }
 
+#indexname2, #indexname3, #indexname4 {
+    display: none;
+}
+
 .indexh3_2 {
     display: none;
 }
@@ -329,6 +343,10 @@ footer img {
         margin: 0;
     }
 
+    .titlebox {
+        width: unset;
+    }
+
     .indexh3 {
         display: none;
     }
@@ -367,7 +385,41 @@ footer img {
         margin-right: 0;
     }
 
-    #lastname {
+    #indexname1 {
+        display: none;
+    }
+
+    #indexname2 {
+        display: inline;
+        margin-top: 0;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+
+    #indexname3 {
+        display: inline;
+        margin-top: 0;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+
+    #indexname4 {
+        display: inline;
+        margin-top: 0;
+        margin-left: 2rem;
+        margin-right: 2rem;
         margin-bottom: 3rem;
+        padding: 0;
+    }
+}
+
+
+@media all and (max-width: 600px) {
+    .mainitem h2 {
+        letter-spacing: 1rem;
     }
 }
