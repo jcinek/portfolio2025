@@ -340,6 +340,11 @@ header {
         letter-spacing: 1rem;
         text-indent: 1rem;
     }
+
+    .mainitem h2, .mainitem h3, .mainitem h4 {
+        letter-spacing: 0;
+        text-indent: 0;
+    }
 }
 
 @media all and (max-width:570px) {
