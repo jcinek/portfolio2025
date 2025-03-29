@@ -291,59 +291,6 @@ footer img {
     padding-bottom: 1rem;
 }
 
-.scrolldownbtn {
-    all: unset;
-    height: 3.5rem;
-    width: 3.5rem;
-    border-radius: 99%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.scrolldownbtn .downarrow {
-    height: 1.4rem;
-    width: 1.4rem;
-    border-right: 3px solid white;
-    border-top: 3px solid white;
-    transform: rotate(135deg);
-    margin-bottom: 10px;
-    pointer-events: none;
-}
-
-.scrolldownbtn:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
-.scrolldownbtn:hover {
-    box-shadow: 0 0 1rem .4rem rgba(255, 255, 255, 0.4);
-}
-
-.scrolldownbtn:active .downarrow{
-    border-right: 3px solid black;
-    border-top: 3px solid black;
-}
-
-.scrolldownbtn2 {
-    margin-top: 5rem;
-}
-
-.scrolltopbtn .downarrow {
-    border-left: 3px solid white;
-    border-bottom: 3px solid white;
-    border-right: 0;
-    border-top: 0;
-    margin-bottom: -12px;
-}
-
-.scrolltopbtn:active .downarrow{
-    border-left: 3px solid black;
-    border-bottom: 3px solid black;
-    border-right: 0;
-    border-top: 0;
-}
-
 #footeryear {
     margin: 0;
     padding: 0;
@@ -400,27 +347,6 @@ footer img {
     
     .mainitem h3 {
         margin: 1.3rem;
-    }
-
-    .scrolldownbtn {
-        height: 2.4rem;
-        width: 2.4rem;
-        margin-top: 2rem;
-        margin-left: .1rem;
-    }
-
-    .scrolldownbtn .downarrow {
-        height: .8rem;
-        width: .8rem;
-        margin-bottom: 7px;
-    }
-
-    .scrolldownbtn2 {
-        margin-top: 4.2rem;
-    }
-
-    .scrolltopbtn .downarrow {
-        margin-bottom: -7px;
     }
 }
 
