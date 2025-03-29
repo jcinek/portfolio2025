@@ -371,15 +371,6 @@ footer img {
 }
 
 @media all and (max-width: 700px) {
-    main {
-        scroll-snap-type: unset;
-        scroll-snap-stop: unset;
-    }
-
-    footer {
-        scroll-snap-align: unset;
-    }
-
     .mainitem h2, .mainitem h3, .mainitem h4 {
         letter-spacing: 0;
         text-indent: 0;
