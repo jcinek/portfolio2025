@@ -64,6 +64,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    height: 100dvh;
 }
 
 .mainitem h2, .galleryitem h3 {
