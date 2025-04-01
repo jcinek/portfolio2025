@@ -64,28 +64,22 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
-    color: white;
-    height: 100dvh;
-    width: auto;
-    text-align: center;
     align-items: center;
+    height: 100dvh;
 }
 
-.galleryitem h2, .galleryitem h3 {
+.mainitem h2, .mainitem h3 {
     text-align: center;
     padding-top: 2rem;
     margin: 0;
 }
 
-.galleryitem h2 {
-    font-size: 4.5rem;
-    font-weight: 400;
+.mainitem h2 {
     letter-spacing: 1rem;
     text-indent: 0;
 }
 
-.galleryitem h3 {
+.mainitem h3 {
     font-size: 2rem;
     padding-bottom: 2rem;
     letter-spacing: 1.5rem;
@@ -96,7 +90,7 @@ header {
     padding-top: 1rem;
 }
 
-.galleryitem h4 {
+.mainitem h4 {
     font-size: 1rem;
     letter-spacing: .1rem;
     text-indent: .1rem;
@@ -219,7 +213,7 @@ header {
 }
 
 @media all and (max-height: 830px) {
-    .galleryitem h2 {
+    .mainitem h2 {
         font-size: 3rem;
     }
     
@@ -231,7 +225,6 @@ header {
     .imagebox img {
         width: 13rem;
     }
-
 }
 
 @media all and (max-height: 710px) {    
@@ -307,7 +300,7 @@ header {
 }
 
 @media all and (max-width:720px) {
-    .galleryitem h2 {
+    .mainitem h2 {
         font-size: 3rem;
         text-indent: 1rem;
     }
@@ -328,7 +321,7 @@ header {
         width: 28rem;
     }
 
-    .galleryitem h3 {
+    .mainitem h3 {
         font-size: 1.5rem;
         padding-bottom: 2rem;
         letter-spacing: 1.5rem;
@@ -337,17 +330,17 @@ header {
 }
 
 @media all and (max-width:600px) {
-    .galleryitem h2 {
+    .mainitem h2 {
         font-size: 2.8rem;
         margin-bottom: .5rem;
     }
 
-    .galleryitem h3 {
+    .mainitem h3 {
         letter-spacing: 1rem;
         text-indent: 1rem;
     }
 
-    .galleryitem h2, .galleryitem h3, .galleryitem h4 {
+    .mainitem h2, .mainitem h3, .mainitem h4 {
         letter-spacing: 0;
         text-indent: 0;
     }
