@@ -108,7 +108,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     width: 90vw;
-    height: 90dvh;
+    height: 100dvh;
 }
 
 .galleryshelf {
@@ -232,9 +232,6 @@ header {
         width: 13rem;
     }
 
-    .gallerybox {
-        height: 80vw;
-    }
 }
 
 @media all and (max-height: 710px) {    
