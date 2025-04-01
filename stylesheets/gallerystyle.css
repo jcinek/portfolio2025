@@ -64,7 +64,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-items: center;
     height: 100dvh;
 }
 
@@ -101,8 +100,7 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 90vw;
-    height: 90dvh;
+
 }
 
 .galleryshelf {
