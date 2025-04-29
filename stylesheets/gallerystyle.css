@@ -212,6 +212,10 @@ header {
     margin-top: 15rem;
 }
 
+/* ------------------------------------------------ */
+/* Media Queries */
+/* ------------------------------------------------ */
+
 @media all and (max-height: 830px) {
     .mainitem h2 {
         font-size: 3rem;

@@ -106,6 +106,10 @@ header h3 {
     color: red;
 }
 
+/* ------------------------------------------------ */
+/* Media Queries */
+/* ------------------------------------------------ */
+
 @media all and (max-width:620px) {
     .mainitem h2 {
         font-size: 2.5rem;

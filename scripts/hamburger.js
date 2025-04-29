@@ -1,3 +1,5 @@
+// Hamburger Menu Code
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".hamburgerNav");
 
